@@ -10,9 +10,9 @@ import {
   StatsItem,
   Label,
   Quantity,
-} from './User.styled';
+} from './Profile.styled';
 
-export const User = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <UserProfile>
       <Description>
@@ -39,7 +39,7 @@ export const User = ({ username, tag, location, avatar, stats }) => {
   );
 };
 
-User.propTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
